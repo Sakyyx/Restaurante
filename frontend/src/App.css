@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* NAVBAR */
+
+nav {
+  background: #ea1d2c;
+  padding: 18px 40px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 40px;
+}
+
+/* TITULOS */
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ea1d2c;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* IMAGEM */
+
+img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 16px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* CARDS */
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* FORMULARIOS */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+}
+
+input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* BOTÕES */
+
+button {
+  background: #ea1d2c;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #d41725;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+  ),
+  url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+  
+  height: 400px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  margin-top: 20px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 52px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
