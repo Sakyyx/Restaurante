@@ -10,7 +10,7 @@ export default function Cadastro() {
     e.preventDefault()
 
     try {
-      await axios.post(
+      const resposta = await axios.post(
         'https://restaurante-ku4f.onrender.com/clientes',
         {
           nome,
@@ -19,39 +19,44 @@ export default function Cadastro() {
         }
       )
 
-      alert('Cliente cadastrado!')
+      console.log(resposta.data)
+
+      alert('Cliente cadastrado com sucesso!')
 
       setNome('')
       setEmail('')
       setSenha('')
+
     } catch (error) {
-      alert('Erro ao cadastrar')
       console.log(error)
+
+      alert('Erro ao cadastrar')
     }
   }
 
   return (
     <div className="container">
-      <h1>Cadastro</h1>
+      <h1>Cadastro Novo</h1>
 
       <form onSubmit={cadastrar}>
+
         <input
           type="text"
-          placeholder="nome"
+          placeholder="Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
         />
 
         <input
           type="email"
-          placeholder="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <input
           type="password"
-          placeholder="senha"
+          placeholder="Senha"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
         />
@@ -59,6 +64,7 @@ export default function Cadastro() {
         <button type="submit">
           Cadastrar
         </button>
+
       </form>
     </div>
   )
