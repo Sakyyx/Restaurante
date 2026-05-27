@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 require('dotenv').config()
 
-const Cliente = require('./backend/models/Cliente')
+const Cliente = require('./models/Cliente')
 
 const app = express()
 
