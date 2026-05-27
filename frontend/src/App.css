@@ -106,8 +106,6 @@ button:hover {
   transform: scale(1.02);
 }
 
-/* RESPONSIVO */
-
 @media (max-width: 768px) {
 
   nav {
