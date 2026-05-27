@@ -31,7 +31,6 @@ app.post('/clientes', async (req, res) => {
   }
 })
 
-// Porta do Render
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
