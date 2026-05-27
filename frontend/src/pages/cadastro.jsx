@@ -11,7 +11,7 @@ export default function Cadastro() {
 
     try {
       await axios.post(
-        'https://restauranteakps.onrender.com/clientes',
+        'https://restaurante-ku4f.onrender.com/Cliente',
         {
           nome,
           email,
