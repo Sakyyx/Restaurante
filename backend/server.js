@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 require('dotenv').config()
 
-const Cliente = require('./models/Cliente')
+const Cliente = require('./backend/models/Cliente')
 
 const app = express()
 
@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err))
 
 app.get('/', (req, res) => {
-  res.send('API funcionando!')
+  res.send('API ok')
 })
 
 app.post('/clientes', async (req, res) => {
